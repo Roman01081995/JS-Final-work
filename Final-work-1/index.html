@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="panel" role="application" aria-label="Name value manager">
+    <h3>Test</h3>
+
+    <div class="field-block">
+      <label class="small" for="pairInput">Name/Value Pair</label>
+      <div class="input-line">
+        <input id="pairInput" type="text" placeholder="Name=Value" aria-label="Name equals Value">
+        <button id="btnAdd" type="button">Add</button>
+      </div>
+    </div>
+
+    <div id="msg" aria-live="polite"></div>
+
+    <div class="main">
+      <div class="left">
+        <label class="small" for="pairList">Name/Value Pair List</label>
+        <select id="pairList" multiple aria-label="Pairs list"></select>
+      </div>
+
+      <div class="right" role="group" aria-label="Actions">
+        <button id="btnSortName" type="button">Sort by Name</button>
+        <button id="btnSortValue" type="button">Sort by Value</button>
+        <button id="btnDelete" type="button">Delete</button>
+      </div>
+    </div>
+  </div>
+<script src="main.js"></script>
+</body>
+</html>
