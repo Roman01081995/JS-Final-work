@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#post-info > div {
+  background-color: #f0f0f0;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+#comments-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#comments-container div {
+  background-color: #e0ffe0;
+  padding: 10px;
+  border-radius: 6px;
+  flex: 1 1 calc(25% - 15px);
+  box-sizing: border-box;
+}
+
+/* --- Tablet (768px – 1023px) --- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #comments-container div {
+    flex: 1 1 calc(33.33% - 15px);
+  }
+}
+
+/* --- Mobile (320px – 767px) --- */
+@media (max-width: 767px) {
+  #comments-container div {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
