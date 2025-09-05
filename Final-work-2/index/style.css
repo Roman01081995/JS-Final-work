@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+#users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#users div {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+#users a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+#users a:hover {
+  text-decoration: underline;
+}
+
+/* --- Tablet (768px – 1023px) --- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #users div {
+    width: calc(50% - 15px);
+    padding: 12px;
+  }
+}
+
+/* --- Mobile (320px – 767px) --- */
+@media (max-width: 767px) {
+  #users div {
+    width: 100%;
+    padding: 10px;
+  }
+}
